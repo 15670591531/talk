@@ -11,6 +11,7 @@
         <module>talk_model</module>
         <module>talk_data</module>
         <module>talk_platform</module>
+        <module>talk_util</module>
     </modules>
     <packaging>pom</packaging>
 
