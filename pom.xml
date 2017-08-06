@@ -23,12 +23,16 @@
         <java.version>1.8</java.version>
         <talk.version>1.0-SNAPSHOT</talk.version>
         <spring.version>1.5.6.RELEASE</spring.version><!--Spring Boot  可惜在parent中禁止使用属性-->
+        <dubbo.version>2.4.10</dubbo.version><!--dubbo-->
+        <zookeeper.version>3.4.10</zookeeper.version>
+        <zkclient.version>0.1</zkclient.version>
         <swagger.version>2.7.0</swagger.version>
         <mybatis.version>3.4.4</mybatis.version><!--Mybatis-->
         <mongodb.version>3.5.0</mongodb.version><!--mongodb-->
         <morphia.version>1.3.2</morphia.version>
         <jedis.version>2.9.0</jedis.version><!--Redis-->
         <druid.version>1.1.2</druid.version><!--Druid连接池-->
+        <mysql.version>5.1.17</mysql.version>
         <kafka.version>0.11.0.0</kafka.version><!--kafka-->
     </properties>
 
@@ -77,6 +81,24 @@
                 <artifactId>spring-boot-devtools</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <!--dubbo-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+            <!-- zookeeper -->
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${zookeeper.version}</version>
+            </dependency>
+            <!-- zkclient -->
+            <dependency>
+                <groupId>com.github.sgroschupf</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>${zkclient.version}</version>
+            </dependency>
             <!--swagger-->
             <dependency>
                 <groupId>io.springfox</groupId>
@@ -105,6 +127,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
+            </dependency>
+            <!-- mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
             </dependency>
             <!--mongodb-->
             <dependency>
