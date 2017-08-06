@@ -16,13 +16,13 @@
     kafka           0.11.0.0                                用于构建高性能消息处理/推送功能
     netty           4.1.14.Final                            用于构建高性能网络通讯
     alipay          alipay-sdk-java20170725114550           用于构建系统支付功能
-        NOTE: 若要使用该jar包,需要将所需的jar包添加到%MAVEN_HOME%/jar/目录下
+        NOTE: 若要使用该jar包,需要将所需的jar包添加到 %MAVEN_HOME%/jar/ 目录下
 
 模块说明:
     <modules>
+        <module>talk_platform</module>          talk platform web工程
         <module>talk_model</module>             实体模块
         <module>talk_data</module>              数据源模块
-        <module>talk_platform</module>          talk platform web工程
         <module>talk_util</module>              工具模块
         <module>talk_msg</module>               消息处理/推送模块
         <module>talk_cache</module>             缓存模块

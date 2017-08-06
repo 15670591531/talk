@@ -28,3 +28,5 @@ hs_err_pid*
 *.iml
 /.idea/
 /src/
+#资源文件目录
+!/source_file/*
