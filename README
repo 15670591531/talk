@@ -27,4 +27,5 @@
         <module>talk_msg</module>               消息处理/推送模块
         <module>talk_cache</module>             缓存模块
         <module>talk_connect</module>           网络通讯模块
+        <module>talk_payment</module>           支付模块
     </modules>
