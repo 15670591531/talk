@@ -16,7 +16,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Controller Demo
+ * Application
+ * 访问地址 http://localhost:8080
  */
 @Configuration/**/
 @EnableAutoConfiguration/*自动配置    exclude={ 不自动配置的类,...}   */
