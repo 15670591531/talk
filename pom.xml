@@ -59,6 +59,26 @@
                 <artifactId>talk_util</artifactId>
                 <version>${talk.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.docryze.talk</groupId>
+                <artifactId>talk_msg</artifactId>
+                <version>${talk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.docryze.talk</groupId>
+                <artifactId>talk_cache</artifactId>
+                <version>${talk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.docryze.talk</groupId>
+                <artifactId>talk_network</artifactId>
+                <version>${talk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.docryze.talk</groupId>
+                <artifactId>talk_payment</artifactId>
+                <version>${talk.version}</version>
+            </dependency>
             <!--spring boot-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
