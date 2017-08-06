@@ -3,18 +3,20 @@
     开发团队          DocRyze Group
     开发时间          2017/08/02
 技术架构:
-    jdk             1.8                         jdk版本 项目jdk源码编译版本
-    spring boot     1.5.6.RELEASE               spring boot版本 用于框架搭建
-    swagger         2.7.0                       用于生成api文档工具
-    jedis           2.9.0                       提供redis缓存服务
-    druid           1.1.2                       用于构架数据库连接池,以及监控工具
-    dubbo           2.4.10                      用于分布式服务治理
-    zookeeper       Release 3.4.10              用于分布式服务治理
-    mysql           mysql-5.7.19                用于关系型数据存储
-    mongodb         3.4.6                       用于文档型数据存储
-    mycat           1.6-RELEASE                 用于数据库的分库分表管理
-    kafka           0.11.0.0                    用于构建高性能消息处理/推送功能
-    netty           4.1.14.Final                用于构建高性能网络通讯
+    jdk             1.8                                     jdk版本 项目jdk源码编译版本
+    spring boot     1.5.6.RELEASE                           spring boot版本 用于框架搭建
+    swagger         2.7.0                                   用于生成api文档工具
+    jedis           2.9.0                                   提供redis缓存服务
+    druid           1.1.2                                   用于构架数据库连接池,以及监控工具
+    dubbo           2.4.10                                  用于分布式服务治理
+    zookeeper       Release 3.4.10                          用于分布式服务治理
+    mysql           mysql-5.7.19                            用于关系型数据存储
+    mongodb         3.4.6                                   用于文档型数据存储
+    mycat           1.6-RELEASE                             用于数据库的分库分表管理
+    kafka           0.11.0.0                                用于构建高性能消息处理/推送功能
+    netty           4.1.14.Final                            用于构建高性能网络通讯
+    alipay          alipay-sdk-java20170725114550           用于构建系统支付功能
+        NOTE: 若要使用该jar包,需要将所需的jar包添加到%MAVEN_HOME%/jar/目录下
 
 模块说明:
     <modules>
