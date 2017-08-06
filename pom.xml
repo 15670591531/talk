@@ -12,6 +12,8 @@
         <module>talk_data</module>
         <module>talk_platform</module>
         <module>talk_util</module>
+        <module>talk_msg</module>
+        <module>talk_cache</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -24,6 +26,7 @@
         <swagger.version>2.7.0</swagger.version>
         <mybatis.version>3.4.4</mybatis.version><!--Mybatis-->
         <mongodb.version>3.5.0</mongodb.version><!--mongodb-->
+        <morphia.version>1.3.2</morphia.version>
         <jedis.version>2.9.0</jedis.version><!--Redis-->
         <druid.version>1.1.2</druid.version><!--Druid连接池-->
         <kafka.version>0.11.0.0</kafka.version><!--kafka-->
@@ -108,6 +111,11 @@
                 <groupId>org.mongodb</groupId>
                 <artifactId>mongodb-driver</artifactId>
                 <version>${mongodb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mongodb.morphia</groupId>
+                <artifactId>morphia</artifactId>
+                <version>${morphia.version}</version>
             </dependency>
             <!--kafka-->
             <dependency>
