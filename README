@@ -16,7 +16,7 @@
     kafka           0.11.0.0                                用于构建高性能消息处理/推送功能
     netty           4.1.14.Final                            用于构建高性能网络通讯
     alipay          alipay-sdk-java20170725114550           用于构建系统支付功能
-        NOTE: 若要使用该jar包,需要将所需的jar包添加到 %MAVEN_HOME%/jar/ 目录下
+        NOTE: 若要使用该jar包,需要将工程中source_file中的相应jar包添加到 %MAVEN_HOME%/jar/ 目录下
 
 模块说明:
     <modules>
