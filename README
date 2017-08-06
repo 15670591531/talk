@@ -13,8 +13,8 @@
     mysql           mysql-5.7.19                用于关系型数据存储
     mongodb         3.4.6                       用于文档型数据存储
     mycat           1.6-RELEASE                 用于数据库的分库分表管理
-    kafka           0.11.0.0                    用于构建高性能消息推送功能
-    netty           4.1.14.Final                用于高性能网络通讯
+    kafka           0.11.0.0                    用于构建高性能消息处理/推送功能
+    netty           4.1.14.Final                用于构建高性能网络通讯
 
 模块说明:
     <modules>
