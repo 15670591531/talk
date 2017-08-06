@@ -25,6 +25,7 @@ import static springfox.documentation.builders.PathSelectors.regex;
 
 /**
  * Swagger2配置
+ * 接口Api访问地址  http://localhost:8080/swagger-ui.html
  */
 @Configuration
 @EnableSwagger2
