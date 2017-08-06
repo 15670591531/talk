@@ -14,7 +14,7 @@
         <module>talk_util</module>
         <module>talk_msg</module>
         <module>talk_cache</module>
-        <module>talk_connect</module>
+        <module>talk_network</module>
         <module>talk_payment</module>
     </modules>
     <packaging>pom</packaging>
