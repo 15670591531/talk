@@ -12,6 +12,11 @@
     <artifactId>talk_data</artifactId>
 
     <dependencies>
+        <!--druid-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
         <!-- mysql -->
         <dependency>
             <groupId>mysql</groupId>
