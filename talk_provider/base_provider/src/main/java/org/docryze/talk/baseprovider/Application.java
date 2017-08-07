@@ -28,10 +28,11 @@ public class Application {
 
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(Application.class);
+        //添加监听器,应用环境构建完成时,启动dubbo
         ApplicationListener<ApplicationEvent> listener = new ApplicationListener<ApplicationEvent>() {
             @Override
             public void onApplicationEvent(ApplicationEvent event) {
-                if (ApplicationReadyEvent.class == event.getClass()) {
+                if (ApplicationReadyEvent.class.equals(event.getClass())) {
                     com.alibaba.dubbo.container.Main.main(args);
                 }
             }
