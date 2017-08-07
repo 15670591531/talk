@@ -12,11 +12,10 @@
     <artifactId>talk_cache</artifactId>
 
     <dependencies>
-        <!--jedis-->
+        <!--redis-->
         <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>${jedis.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
     </dependencies>
 </project>
