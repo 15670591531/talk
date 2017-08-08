@@ -7,32 +7,6 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * Dubbo配置
- *          #可通过注解配置,应用中使用注解来进行服务注册和引用
- *            service           @Service
- *            reference         @Reference
- *
- *
- *         #引用必要配置
- *            application
- *            registry
- *            protocol
- *            annotation
- *
- *        #个性化配置
- *            methed            控制到方法级
- *            argument          控制到参数级别
- *            monitor           监控配置
- *            module
- *            provider
- *            consumer
- *            parameter
- *
- *
- *
- */
-
 @Configuration
 @ConditionalOnClass(Main.class)
 public class DubboConfig {
@@ -43,23 +17,17 @@ public class DubboConfig {
     @Bean
     public ApplicationConfig applicationConfig() {
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        applicationConfig.setName("base_provider");
+        applicationConfig.setName("talk_platform"); //设置应用名 , 统一取该项目名称, 不能有重复
         return applicationConfig;
     }
 
     @Bean
     public RegistryConfig registry() {
         RegistryConfig registryConfig = new RegistryConfig();
-        registryConfig.setAddress("127.0.0.1:2181");
-        registryConfig.setProtocol("zookeeper");
+        registryConfig.setAddress("zookeeper://127.0.0.1:2181");
+        registryConfig.setUsername("docryze");
+        registryConfig.setPassword("talk");
         return registryConfig;
-    }
-
-    @Bean
-    public ProtocolConfig protocol() {
-        ProtocolConfig protocolConfig = new ProtocolConfig();
-        protocolConfig.setPort(20881);
-        return protocolConfig;
     }
 
     /**
@@ -82,4 +50,5 @@ public class DubboConfig {
         mc.setProtocol("registry");
         return mc;
     }
+
 }

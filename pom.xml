@@ -46,6 +46,7 @@
         <netty.version>4.1.14.Final</netty.version><!--netty-->
         <servlet.version>3.1.0</servlet.version><!--servlet-->
         <fastjson.version>1.2.35</fastjson.version>
+        <cglib.version>3.2.5</cglib.version>
     </properties>
 
     <dependencyManagement>
@@ -253,6 +254,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <!--cglib-->
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>${cglib.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

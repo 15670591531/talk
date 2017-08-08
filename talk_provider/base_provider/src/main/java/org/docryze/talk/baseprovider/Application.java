@@ -26,7 +26,7 @@ public class Application {
     @Bean
     public ExitCodeGenerator exitCodeGenerator() {/*自定义退出码*/
         return () -> 42;
-    }/*自定义退出码*/
+    }
 
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(Application.class);
