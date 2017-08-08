@@ -10,6 +10,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ConditionalOnClass(Main.class)
 public class DubboConfig {
+    private static final String APPLICATION_NAME = "talk_platform";//应用名(需要更改)
+    private static final String ZOOKEEPER_ADDRESS = "zookeeper://127.0.0.1:2181";//zookeeper地址
+    private static final String REGISTRY_USERNAME = "docryze";//注册用户名
+    private static final String REGISTRY_PASSWORD = "talk";//注册密码
+    private static final String MONITOR_PROTOCOL = "registry";//监控方式
+    private static final String SCAN_PACKAGE = "org.docryze.talk.talkplatform";//扫描包路径(需要更改)
+
     public DubboConfig(){
         System.out.println("\n===========加载配置文件件================");
     }
@@ -17,16 +24,16 @@ public class DubboConfig {
     @Bean
     public ApplicationConfig applicationConfig() {
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        applicationConfig.setName("talk_platform"); //设置应用名 , 统一取该项目名称, 不能有重复
+        applicationConfig.setName(APPLICATION_NAME); //设置应用名 , 统一取该项目名称, 不能有重复
         return applicationConfig;
     }
 
     @Bean
     public RegistryConfig registry() {
         RegistryConfig registryConfig = new RegistryConfig();
-        registryConfig.setAddress("zookeeper://127.0.0.1:2181");
-        registryConfig.setUsername("docryze");
-        registryConfig.setPassword("talk");
+        registryConfig.setAddress(ZOOKEEPER_ADDRESS);
+        registryConfig.setUsername(REGISTRY_USERNAME);
+        registryConfig.setPassword(REGISTRY_PASSWORD);
         return registryConfig;
     }
 
@@ -37,7 +44,7 @@ public class DubboConfig {
     @Bean
     public AnnotationBean annotationBean(){
         AnnotationBean annotationBean = new AnnotationBean();
-        annotationBean.setPackage("org.docryze.talk.talkplatform");
+        annotationBean.setPackage(SCAN_PACKAGE);
         return annotationBean;
     }
 
@@ -47,7 +54,7 @@ public class DubboConfig {
     @Bean
     public MonitorConfig monitorConfig() {
         MonitorConfig mc = new MonitorConfig();
-        mc.setProtocol("registry");
+        mc.setProtocol(MONITOR_PROTOCOL);
         return mc;
     }
 
