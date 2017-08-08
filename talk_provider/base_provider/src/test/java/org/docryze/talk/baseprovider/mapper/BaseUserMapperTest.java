@@ -1,5 +1,6 @@
-package org.docryze.talk.baseprovider;
+package org.docryze.talk.baseprovider.mapper;
 
+import org.docryze.talk.baseprovider.Application;
 import org.docryze.talk.baseprovider.mapper.BaseUserMapper;
 import org.docryze.talk.talkmodel.table.User;
 import org.junit.Test;
