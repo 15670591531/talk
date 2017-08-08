@@ -16,6 +16,7 @@
         <module>talk_cache</module>
         <module>talk_network</module>
         <module>talk_payment</module>
+        <module>talk_api</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -25,7 +26,10 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
+        <!--模块/接口版本管理-->
         <talk.version>1.0-SNAPSHOT</talk.version>
+        <base.api.version>1.0-SNAPSHOT</base.api.version>
+
         <spring.version>1.5.6.RELEASE</spring.version><!--Spring Boot  可惜在parent中禁止使用属性-->
         <dubbo.version>2.4.10</dubbo.version><!--dubbo-->
         <zookeeper.version>3.4.10</zookeeper.version>
@@ -82,6 +86,11 @@
                 <artifactId>talk_payment</artifactId>
                 <version>${talk.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.docryze.talk</groupId>
+                <artifactId>base_api</artifactId>
+                <version>${base.api.version}</version>
+            </dependency>
             <!--spring boot-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -122,6 +131,12 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-mail</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <optional>true</optional>
                 <version>${spring.version}</version>
             </dependency>
             <!--dubbo-->

@@ -10,11 +10,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>talk_platform</artifactId>
+
     <dependencies>
         <!--模块依赖-->
         <dependency>
             <groupId>org.docryze.talk</groupId>
             <artifactId>talk_model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.docryze.talk</groupId>
+            <artifactId>talk_util</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.docryze.talk</groupId>
+            <artifactId>base_api</artifactId>
         </dependency>
         <!--spring boot web-->
         <dependency>

@@ -1,4 +1,4 @@
-package org.docryze.talk.baseprovider.config;
+package org.docryze.talk.talkplatform.config;
 
 import com.alibaba.dubbo.config.*;
 import com.alibaba.dubbo.config.spring.AnnotationBean;
@@ -58,18 +58,18 @@ public class DubboConfig {
     @Bean
     public ProtocolConfig protocol() {
         ProtocolConfig protocolConfig = new ProtocolConfig();
-        protocolConfig.setPort(20880);
+        protocolConfig.setPort(20881);
         return protocolConfig;
     }
 
     /**
-     * 配置dubbo注解扫描路径
+     * 配置dubbo注解扫描包路径
      * @return
      */
     @Bean
     public AnnotationBean annotationBean(){
         AnnotationBean annotationBean = new AnnotationBean();
-        annotationBean.setPackage("org.docryze.talk.baseprovider");
+        annotationBean.setPackage("org.docryze.talk.talkplatform");
         return annotationBean;
     }
 
